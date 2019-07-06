@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/************DEFAULTS**************** */
+.container{
+    background-image: url("hustle.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    z-index: 1;
+    
+}
+.mid{
+    
+    flex:1;
+}
+button{
+    text-align: center;
+    text-decoration: azure;
+    padding:20px;
+    background-color:red;
+    width:100%;
+    outline: none;
+    font-size: 20px;
+    margin-right:auto;
+    font-weight: bold;
+}
+button:hover{
+    opacity: .9;
+}
+ul li a , ul li{
+    line-height: 60px;
+    font-size:large;
+    list-style: none;
+    text-decoration: none;
+    color:whitesmoke;
+    padding:5px;
+}
+ul li:hover{
+    background:grey;
+    color: aqua;
+    cursor: pointer;
+}
+ul li a:hover{
+    background:grey;
+    color: aqua;
+    cursor: pointer;
+} 
+.navbar{
+    background:black;
+}
+
+.navbar-menu ul {
+    display: flex;
+    text-align: center;
+}
+ .left{
+    float:right;
+    color:whitesmoke;
+}
+.right{
+    float:left;
+}
+h1,h2{
+    color:deepskyblue;
+    text-align: center;
+    
+}
+.footer{
+
+    background-color: rgb(2, 1, 2);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.footer-menu ul{
+    display:flex;
+    justify-content:space-evenly;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    opacity: .8;
+    line-height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+.modalbox{
+    display: none;
+    margin-left:30%;
+    margin-right:auto;
+    margin-top: 0;
+    background-blend-mode: hard-light;
+    color:tomato;
+    position: absolute;
+    z-index: 2; /* Sit on top */
+    width: 50%; /* Full width */
+    height: 40%; /* Full height */
+    /*overflow: auto; /* Enable scroll if needed */
+    padding-top: 60px;
+    animation: zoom .5s;
+    outline-width: 5px;
+    text-align: left;
+    
+    
+}
+@keyframes zoom{
+    from{ transform:scale(0)}
+    to { transform:scale(1)}
+}
+
+.close{
+    position: absolute;
+    right: 25px;
+    
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+.close:hover,.close:focus{
+    color:red;
+    cursor: pointer;
+}  
+.forgot{
+    margin-left:5px;
+    text-align: right;
+    text-emphasis:bold;
+}
