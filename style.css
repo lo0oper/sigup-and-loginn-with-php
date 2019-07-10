@@ -110,6 +110,7 @@ input[type=text], input[type=password] {
     /*overflow: auto; /* Enable scroll if needed */
     padding-top: 60px;
     animation: zoom .5s;
+    -moz-animation:zoom .5s;
     outline-width: 5px;
     text-align: left;
     
